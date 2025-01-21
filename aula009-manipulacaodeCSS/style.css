@@ -1,0 +1,16 @@
+
+
+.azul{
+    text-align: center;
+    background: #818181;
+    padding: 15px 0px;
+    color: #fff;
+}
+.light-body{
+    background-color: #fff;
+    color: #000;
+}
+.dark-body{
+    background-color: #1f1f1f;
+    color: #fff;
+}
