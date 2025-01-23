@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 11- eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--
+    onload: quando carregar a pagina;
+    onscroll: quando rolar a pagina;
+    onmouseover: quando o mouse focar em cima;
+-->
+<body onload="carregou()" onscroll="rolouPagina()">
+    <div class="main-tela">
+        <!-- onmouseover = quando o mouse passa sobre o elemento -->
+        <h1 id="titulo" onmouseover="focou()">Aula 11 - Eventos</h1>
+        <section class="conteudo">
+            <article class="box"></article>
+            <article class="box"></article>
+
+            <button id="btn1" class="botao" type="button">box 1</button>
+            <button id="btn2" class="botao" type="button">box 2</button>
+        </section>
+        <hr>
+        <form action="#" id="frm1"> 
+            <!-- onfocus = quando o elemento esta emfoco;
+                onblur = quando desfoca do elemento;
+                onkeypress = quando tecla qualquer tecla; 
+            -->
+            <input type="text" name="ctexto" id="ctexto" placeholder="Digite seu nome" 
+                onfocus="onCamper()" onblur="offCamperFocused()" onkeypress="avisarqteclou()"
+            >
+            <button type="submit" id="btn3" class="botao">Enviar</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

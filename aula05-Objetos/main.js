@@ -65,4 +65,17 @@ produtos.preco = [...produtos.preco, 9.99];
 carros.marca = [...carros.marca, 'Lexus'];
 
 let valor = 220.99
-document.write(`Preço: ${valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <hr>`)
+document.write(`<p>Preço: ${valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</p> <hr>`)
+
+
+
+const fruit = {
+    fruit1: 'apple',
+    fruit2: 'watermelon',
+    fruit3: 'stranberry',
+    fruit4: 'onrange',
+}
+
+Object.values(fruit).forEach(value => {
+    console.log(value);
+})
