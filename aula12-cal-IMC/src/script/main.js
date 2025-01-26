@@ -68,6 +68,7 @@ const situacao = (imc) => {
         situation = "obsidade severa"
     }else {
         situation = "informe seu peso corretamente"
+        solveresult.classList = "resultado";
     }
     return situation
 }
