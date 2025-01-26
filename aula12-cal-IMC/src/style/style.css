@@ -5,7 +5,7 @@
 }
 body{
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,10 +117,13 @@ h1{
 }
 /* responsividade*/
 @media (max-width: 1024px){
+    body{
+        height: 110vh;
+    }
     .main-tela{
         width: 90%;
         height: auto;
-        margin: 10px 0px;
+        margin: 20px 0px;
     }
     .infor{
         width: 100%;
