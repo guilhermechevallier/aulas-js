@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-tela">
+        <header>
+            <h1>Resultado Nota</h1>
+        </header>
+        <div class="examData">
+            <form action="#" id="frm">
+                <div class="notept">
+                    <div class="data">
+                        <label for="prova1">Nota da prova 1:</label>
+                        <input type="number" name="prova1" id="prova1" placeholder="Sua nota" min="0.1" max="10">
+                    </div>
+                    <div class="data">
+                        <label for="prova2">Nota da prova 2:</label>
+                        <input type="number" name="prova2" id="prova2" placeholder="Sua nota" min="0.1" max="10">
+                    </div>
+                </div>
+                <div class="notept">
+                    <div class="data">
+                        <label for="prova3">Nota da prova 3:</label>
+                        <input type="number" name="prova3" id="prova3" placeholder="Sua nota" min="0.1" max="10">
+                    </div>
+                    <div class="data">
+                        <label for="prova4">Nota da prova 4:</label>
+                        <input type="number" name="prova4" id="prova4" placeholder="Sua nota" min="0.1" max="10">
+                    </div>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="Enviar" id="enviar">
+                    <input type="button" value="Limpar" id="limpar">
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="solve">
+                <label for="resultado">Situcao</label>
+                <input type="text" name="Resultado" id="media" placeholder="0.00 Média" disabled>
+            </div>
+            <div class="solve">
+                <label for="resultado">Situcao</label>
+                <input type="text" name="Resultado" id="resultado" class="resultado" placeholder="situacao" disabled>
+            </div>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
