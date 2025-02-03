@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.main-tela{
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+    color: #6a0f9b;
+    margin-bottom: 20px;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo .centro{
+    border: none;
+    margin: 10px 0px 50px 0px;
+    border-radius: .7rem;   
+    font-size: 1.5rem;
+    padding: 15px 50px;
+    color: #fff;
+    background-image: linear-gradient(to top,#1c0730, #9223ec);
+}
+.conteudo img{
+    width: 200px;
+}
+.conteudo button{
+    margin: 50px 0px;
+    padding: 13px 30px;
+    border: none;   
+    background-color: #cb6df1;
+    border-radius: .6rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+/* Animar o dado */
+@keyframes mover {
+    0% {
+        transform: translateY(0px); /* mover no eixo Y vertical */
+        transform: rotate(45deg);   /* rotacionar 90 graus */
+        opacity: 0; /* opacidade 0 = 100% transparente */
+       }
+    50% {
+        transform:scale(50%); /* mudar tamanho para 50% */
+    }
+    100% {
+        transform: translateY(-15px);  /* mover no eixo Y vertical */
+        transform: rotate(-45deg);     /* rotacionar -90 graus */
+        opacity: 1; /* opacidade 1 = 0% transparente */
+    }
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 0; /* opacidade 0 = 100% transparente */
+    }
+    from {
+        opacity: 1; /* opacidade 1 = 0% transparente */
+    }
+}
+
+.animar {
+    animation: mover 0.5s infinite alternate;
+    /*
+    animation: mover .5s infinite alternate;
+    animation: mover .5s linear infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+.aparecer {
+    animation: aparecer 1.5s ease-in;
+}

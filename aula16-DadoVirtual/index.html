@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dado virtual</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-tela">
+        <h1>Dado virtual D6 | Virtual Dice</h1>
+        <section class="conteudo">
+            <p id="sorteado" class="centro">?</p>   
+            <figure>
+                <img src="images/0.png" alt="Dado" id="imgDado">
+            </figure>
+            
+            <button type="button" id="sortear">Sortear</button>
+            
+        </section>  
+    </main>
+    <audio preload
+        id="dadoRolando" 
+        src="assets/dado-rolando.mp3"
+        type="audio/mpeg">
+    </audio>
+    
+    <script src="index.js"></script>
+</body>
+</html>
+
+
