@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adivinhe o numero</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<!-- assim quando o site abrir, já vai ser gerado um numero sort 
+    body onload="functiongeneraternumbersecret()"
+-->
+<body onload="NumSort()">
+    <div class="tela-main">
+        <header>
+            <h1>Adivinhe o número</h1>
+            <p>chute um número de 1 a 10:</p>
+        </header>
+        <main>
+            <form class="num">
+                <label for="numberr">
+                    <!-- onBlur = qunado sair um mensagem aparecerá informando que nenhum numero foi inserido;
+                        onClick = com duas funcoes, uma para ativar o botao chutar, outra para ativar a musica; 
+                        onclick = "functionplaymusic(); activebtnchute()"
+                    -->
+                    <input
+                        type="text" id="numberr" name="inputNumber" placeholder="0" class="text-chute" min="1" max="10" onclick="ActiveSound(); Actbtn()"
+                        onblur="validad(this.value)"
+                    >
+                </label>
+                <!--  quando clicar, vai ser registrado o valor de resposta e comparada com o valor
+                    teado, tendo essa comparação feita, será emetido uma mensagem, se foi ou não acertada;
+                    onClick="playgame()"
+                -->
+                <input class="btn" type="button" value="chutar" id="chutar" onclick="playgame()">
+
+                <button type="button" id="btn-music" class="music" onclick="OffSound()">&#9835;</button>
+            </form>
+            <div class="msg">
+                <p class="aviso" id="situation"></p>
+            </div>
+        </main>
+        <footer>
+            <p>made for Guilherme</p>
+        </footer>
+        <!-- soundtrack background-->
+        <audio
+            preload loop
+            id="soundtrack"
+            src="assents/Transformers-3-Soundtrack.mp3">
+        </audio>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
